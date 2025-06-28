@@ -6,7 +6,7 @@ import { toast } from 'react-toastify';
 import mockProducts from '../../data/mockProduct';
 import { addToCart } from '../../redux/slices/cartSlice';
 import { toggleLike } from '../../redux/slices/likeSlice';
-import './Single-Card.css';
+import './Single-card.css';
 
 const SingleCard = () => {
   const { id } = useParams();
