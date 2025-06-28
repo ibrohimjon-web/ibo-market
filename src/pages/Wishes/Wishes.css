@@ -1,0 +1,26 @@
+.wishes-container {
+  padding: 40px 20px;
+  min-height: 100vh;
+  background-color: #f9f9fb;
+}
+
+.wishes-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #222;
+  text-align: center;
+}
+
+.wishes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.no-wishes {
+  text-align: center;
+  color: #888;
+  font-size: 18px;
+  margin-top: 50px;
+}

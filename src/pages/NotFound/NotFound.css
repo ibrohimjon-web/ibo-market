@@ -1,0 +1,47 @@
+.notfound-container {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #f8f9fa;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.notfound-title {
+  font-size: 120px;
+  font-weight: bold;
+  color: #ff4d4f;
+  animation: bounce 1.5s infinite;
+}
+
+.notfound-text {
+  font-size: 24px;
+  color: #333;
+  margin: 20px 0;
+}
+
+.notfound-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #4361ee;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.notfound-btn:hover {
+  background-color: #3f37c9;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

@@ -1,0 +1,99 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem 1rem;
+  background-color: #f9f9fb;
+  animation: fadeIn 0.7s ease both;
+}
+
+.home-banner {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1400px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.home-category {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.home-products {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1280px;
+}
+
+.home-products-title {
+  text-align: center;
+  font-size: 2.25rem;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.title-highlight {
+  position: relative;
+  z-index: 1;
+  padding: 0 1rem;
+}
+
+.title-highlight::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 12px;
+  background-color: rgba(63, 55, 201, 0.2);
+  z-index: -1;
+  border-radius: 4px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1024px) {
+  .home {
+    gap: 2.5rem;
+  }
+
+  .home-products-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+
+  .home-products-title {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  .home-products-title {
+    font-size: 1.5rem;
+  }
+}
