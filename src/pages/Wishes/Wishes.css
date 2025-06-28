@@ -1,26 +1,66 @@
 .wishes-container {
   padding: 40px 20px;
   min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
   background-color: #f9f9fb;
 }
 
 .wishes-title {
   font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 20px;
+  font-weight: 600;
+  margin-bottom: 24px;
   color: #222;
   text-align: center;
 }
 
 .wishes-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
+  width: 100%;
 }
 
+.product-link {
+  text-decoration: none;
+  animation: fadeInUp 0.3s ease both;
+  transition: transform 0.2s ease;
+}
+
+.product-link:hover {
+  transform: translateY(-5px);
+}
+
+/* Agar mahsulot bo'lmasa */
 .no-wishes {
   text-align: center;
-  color: #888;
+  color: #777;
   font-size: 18px;
-  margin-top: 50px;
+  margin-top: 60px;
+}
+
+/* Animatsiya */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsivlik */
+@media (max-width: 768px) {
+  .wishes-title {
+    font-size: 24px;
+  }
+
+  .wishes-container {
+    padding: 30px 16px;
+  }
 }
